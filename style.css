@@ -1,5 +1,5 @@
 div {
-    border: 2px solid aqua;
+    border: 1px solid aqua;
 }
 
 .container {
@@ -15,11 +15,15 @@ div {
     align-items: start;
 }
 
+svg {
+    width: 40px;
+}
+
 /* header part */
 .header {
     grid-column: 2 / 5;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2r;
     grid-template-columns: 3fr 1fr;
     align-items: center;
 }
@@ -30,6 +34,10 @@ div {
     grid-template-columns: 1fr 5fr repeat(3, 1fr);
 }
 
+.search-bar img {
+    width: 50%;
+}
+
 .user-info {
     grid-row: 2 / 3;
     display: grid;
@@ -38,6 +46,11 @@ div {
 
 .user-info .avatar {
     grid-row: 1/3;
+    text-align: center;
+}
+
+.user-info img {
+    width: 75%;
 }
 
 
@@ -64,10 +77,25 @@ div {
     padding: 20px;
 }
 
+.card-svg {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.card svg {
+    width: 20px;
+}
+
+
 .announcements {
     grid-column: 4 / 5;
 }
 
 .trending {
     grid-column: 4 / 5;
+}
+
+.trending img {
+    width: 25%;
 }
